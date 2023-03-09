@@ -20,12 +20,11 @@
             <div class="slds-m-top_medium slds-m-around_medium slds-m-bottom_x-large">
                 <div class="slds-p-around_medium lgc-bg">
                     <lightning-tile label={citizenWrapper.Name}>
-                        <ul class="slds-list_horizontal slds-has-dividers_right">
-                            <li class="slds-item">{citizenWrapper.DOB__c}</li>
-                            <li class="slds-item">{citizenWrapper.Gender__c}</li>
-                            <li class="slds-item">{citizenWrapper.SA_Citizen__c}</li>
-                            
-                        </ul>
+                        <div>
+                            <div><b>DOB:</b> {citizenWrapper.DOB__c}</div>
+                            <div><b>Gender:</b> {citizenWrapper.Gender__c}</div>
+                            <div><b>Status:</b> {citizenWrapper.SA_Citizen__c}</div>
+                        </div>
                     </lightning-tile>
                 </div>
             </div>
